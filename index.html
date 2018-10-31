@@ -60,7 +60,7 @@
                         setcookie(); 
                     }
                 }
-                getkey.open("GET", "http://127.0.0.1:5000/getnewkey", true);
+                getkey.open("GET", "http://10.0.0.146:5000/getnewkey", true);
                 getkey.send();
             } else {
                 key = prompt("Enter your key:");
@@ -96,7 +96,7 @@
                         setcookie();
                     }
                 }
-                getkey.open("GET", "http://127.0.0.1:5000/getnewkey", true);
+                getkey.open("GET", "http://10.0.0.146:5000/getnewkey", true);
                 getkey.send();
             } else {
                 while(key == null || key == '') {
@@ -143,7 +143,7 @@
                     }
                 }
             }
-            request.open("GET", "http://127.0.0.1:5000/?key=" + updatekey, true);
+            request.open("GET", "http://10.0.0.146:5000/?key=" + updatekey, true);
             request.send();
         }
     </script>
